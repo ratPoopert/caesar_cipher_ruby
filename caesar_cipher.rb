@@ -11,4 +11,8 @@ def caesar_cipher(string, shift_amount = 1)
   puts encrypted_string
 end
 
-caesar_cipher("Hello, World!", -50)
+puts "Please enter text to encrypt:"
+string = gets.chomp
+puts "Please enter a shift amount:"
+shift_amount = gets.chomp.to_i
+caesar_cipher(string, shift_amount)
